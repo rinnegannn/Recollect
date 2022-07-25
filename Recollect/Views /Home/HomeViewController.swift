@@ -95,7 +95,7 @@ class HomeViewController: UIViewController {
     }
 
 //    @IBAction func sharePressed(_ sender: Any) {
-//        let activityVC = UIActivityViewController(activityItems: [], applicationActivities: nil)
+//        let activityVC = UIActivityViewController(activityItems: [models], applicationActivities: nil)
 //        activityVC.popoverPresentationController?.sourceView = self.view
 //
 //        self.present(activityVC, animated: true, completion: nil)
@@ -125,7 +125,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = models[indexPath.row].title
         let date = models[indexPath.row].date
         let formatter = DateFormatter()
-        let time = "HH:mm"
+        let time = "HH:mm a"
         formatter.dateFormat = "MMMM dd, yyyy, \(time)"
         cell.detailTextLabel?.text = formatter.string(from: date)
         return cell

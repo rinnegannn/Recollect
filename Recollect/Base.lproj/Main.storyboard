@@ -227,16 +227,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-Ve-HJM">
-                                <rect key="frame" x="-94" y="250" width="390" height="142"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-Ve-HJM">
+                                <rect key="frame" x="0.0" y="245" width="390" height="142"/>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-tV-M5M">
-                                <rect key="frame" x="150" y="515" width="91" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juY-kC-j6A">
+                                <rect key="frame" x="150" y="537" width="91" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTapSaveButton" destination="M14-PC-gwU" eventType="touchUpInside" id="H5e-8G-Y8F"/>
+                                    <action selector="didTapSaveButton" destination="M14-PC-gwU" eventType="touchUpInside" id="L93-zQ-9vc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -248,10 +253,8 @@
                             <constraint firstItem="gC5-80-cly" firstAttribute="top" secondItem="OX4-VY-if6" secondAttribute="top" constant="10" id="F6Y-Qd-Opl"/>
                             <constraint firstItem="OX4-VY-if6" firstAttribute="trailing" secondItem="hPO-Ve-HJM" secondAttribute="trailing" constant="94" id="Kz2-xO-X5D"/>
                             <constraint firstItem="2DY-z0-Iy5" firstAttribute="top" secondItem="gC5-80-cly" secondAttribute="bottom" constant="20" id="NcW-SF-oIr"/>
-                            <constraint firstItem="hPO-Ve-HJM" firstAttribute="leading" secondItem="fXA-Yf-WDb" secondAttribute="leading" constant="-94" id="TvH-Fz-YzW"/>
                             <constraint firstItem="2DY-z0-Iy5" firstAttribute="leading" secondItem="OX4-VY-if6" secondAttribute="leading" constant="10" id="Udu-sV-WfS"/>
                             <constraint firstItem="OX4-VY-if6" firstAttribute="trailing" secondItem="gC5-80-cly" secondAttribute="trailing" constant="10" id="Vbf-cX-FzQ"/>
-                            <constraint firstItem="hPO-Ve-HJM" firstAttribute="top" secondItem="2DY-z0-Iy5" secondAttribute="bottom" constant="72" id="fhC-7I-4lF"/>
                             <constraint firstItem="OX4-VY-if6" firstAttribute="bottom" secondItem="hPO-Ve-HJM" secondAttribute="bottom" constant="398" id="u9g-Gu-pSA"/>
                         </constraints>
                     </view>
